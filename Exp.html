@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Watch Now Slider</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+  />
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      margin: 0;
+    }
+    
+  </style>
+</head>
+<body>
+    <div class="vediopart">
+        <div class="watch-now-head">Watch now</div>
+
+  <div class="video-slider-wrapper">
+    <div class="tiny-video-slider">
+      <div class="video-slider-item">
+        <img
+          src="./images/card4.webp"
+          class="video-thumb"
+          alt="Video 1"
+        />
+        <div class="video-meta">Gadgets | 1h ago</div>
+        <div class="video-title">
+          Balancing Work and Wellness: Tech Solutions for Healthy
+        </div>
+      </div>
+
+      <div class="video-slider-item">
+        <img
+          src="./images/card4.webp"
+          class="video-thumb"
+          alt="Video 2"
+        />
+        <div class="video-meta">Tech | 7d ago</div>
+        <div class="video-title">
+          Business Agility the Digital Age: Leveraging AI and Automation
+        </div>
+      </div>
+      <div class="video-slider-item">
+        <img
+          src="./images/card4.webp"
+          class="video-thumb"
+          alt="Video 2"
+        />
+        <div class="video-meta">Tech | 7d ago</div>
+        <div class="video-title">
+          Business Agility the Digital Age: Leveraging AI and Automation
+        </div>
+      </div>
+      <div class="video-slider-item">
+        <img
+          src="./images/card4.webp"
+          class="video-thumb"
+          alt="Video 2"
+        />
+        <div class="video-meta">Tech | 7d ago</div>
+        <div class="video-title">
+          Business Agility the Digital Age: Leveraging AI and Automation
+        </div>
+      </div>
+
+      <div class="video-slider-item">
+        <img
+          src="./images/card4.webp"
+          class="video-thumb"
+          alt="Video 3"
+        />
+        <div class="video-meta">Network | 9d ago</div>
+        <div class="video-title">
+          The Art of Baking: From Classic Bread to Artisan Pastries
+        </div>
+      </div>
+    </div>
+
+    <div class="custom-nav">
+      <button class="custom-prev">◀</button>
+      <button class="custom-next">▶</button>
+    </div>
+  </div>
+    </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+ <script>
+  const slider = tns({
+    container: ".tiny-video-slider",
+    items: 1,
+    slideBy: 1,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    autoplayButtonOutput: false,
+    controls: false,
+    nav: false,
+    gutter: 10,
+    responsive: {
+      640: {
+        items: 1
+      },
+      768: {
+        items: 2
+      },
+      1024: {
+        items: 3
+      }
+    }
+  });
+
+  const autoplay = slider.getInfo().autoplay;
+
+  // Pause autoplay when navigation buttons are clicked
+  document.querySelector(".custom-prev").addEventListener("click", () => {
+    autoplay.pause(); // pause autoplay
+    slider.goTo("prev");
+    autoplay.play(); // resume autoplay
+  });
+
+  document.querySelector(".custom-next").addEventListener("click", () => {
+    autoplay.pause(); // pause autoplay
+    slider.goTo("next");
+    autoplay.play(); // resume autoplay
+  });
+</script>
+</body>
+</html>
