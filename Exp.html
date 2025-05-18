@@ -2,27 +2,138 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Responsive Article Page</title>
-
-  <!-- Font Awesome for social icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Clone</title>
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.7;
-      color: #333;
       background: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      max-width: 1200px;
+      margin: auto;
       padding: 20px;
     }
 
-  
+    .main-content {
+      flex: 3;
+      padding-right: 20px;
+    }
+
+    .sidebar {
+      flex: 1;
+      position: sticky;
+      top: 20px;
+      align-self: flex-start;
+    }
+
+    .main-content img {
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .sidebar section {
+      margin-bottom: 30px;
+      padding: 15px;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+    }
+
+    .sidebar h3 {
+      margin-bottom: 10px;
+    }
+
+    ul.category-list {
+      list-style: none;
+    }
+
+    ul.category-list li {
+      padding: 5px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    @media (max-width: 992px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .main-content {
+        padding-right: 0;
+      }
+
+      .sidebar {
+        position: relative;
+        top: auto;
+        margin-top: 20px;
+      }
+    }
   </style>
 </head>
 <body>
+  <div class="container">
+    <div class="main-content">
+      <div class="section">
+        <h2>Capital of Texas</h2>
+        <p>While Elitism and all the buzz of the Rocky Mountains, we are...</p>
+        <img src="https://cdn.pixabay.com/photo/2016/11/29/12/54/audience-1867751_1280.jpg" alt="Speaker at podium" />
+        <p>Austin is a growing city and has been recognized as one of the top cities in the country. The city has become a hub for technology and innovation, attracting professionals from across the globe.</p>
+      </div>
 
+      <div class="section">
+        <h2>Great Schools and Entertainment</h2>
+        <p>Education systems are growing stronger, and the entertainment industry is booming. From music festivals to museums and tech expos, there is always something happening.</p>
+        <img src="https://cdn.pixabay.com/photo/2017/01/10/19/05/meeting-1979261_1280.jpg" alt="Student in classroom" />
+        <p>Families enjoy high-quality education and a vibrant cultural life. The local schools rank among the best in the state, and students benefit from a wide range of programs and activities.</p>
+      </div>
 
+      <div class="section">
+        <h2>Thriving Tech Scene</h2>
+        <p>Austin's economy is fueled by a rapidly growing tech sector. Startups and established companies alike find a supportive and innovative community here.</p>
+        <img src="https://cdn.pixabay.com/photo/2018/01/18/07/12/laptop-3087585_1280.jpg" alt="Tech workspace" />
+        <p>This has led to increased job opportunities and a dynamic, future-focused environment that's perfect for young professionals and entrepreneurs.</p>
+      </div>
+    </div>
 
+    <aside class="sidebar">
+      <section>
+        <h3>Category</h3>
+        <ul class="category-list">
+          <li>Health</li>
+          <li>Science</li>
+          <li>Tech</li>
+          <li>Politics</li>
+          <li>Sports</li>
+          <li>Education</li>
+        </ul>
+      </section>
+      <section style="background:#d10000; color:white; text-align:center;">
+        <h3>NEWS</h3>
+        <p>Download Our App for 24/7 News Updates</p>
+        <img src="https://cdn.pixabay.com/photo/2016/12/09/08/07/news-1890248_1280.png" alt="News App" style="width:100%; margin-top:10px;">
+      </section>
+      <section>
+        <h3>Subscribe To Our Newsletter</h3>
+        <input type="email" placeholder="Enter your email" style="width:100%; padding:10px; margin-top:10px;">
+        <button style="margin-top:10px; width:100%; padding:10px; background:#d10000; color:#fff; border:none;">Subscribe</button>
+      </section>
+    </aside>
+  </div>
 </body>
 </html>

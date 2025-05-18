@@ -2,17 +2,16 @@
   display: flex;
   margin: auto;
   max-width:1280px;
+;
  }
 .contentlist {
     margin-left: 28px;
     max-width: 400px;
-    margin-top: -1244px;
     position: sticky;
 }
  
     .container2{
-      max-width: px;
-      margin: auto;
+     
     }
  .breadcrumb-nav {
       background-color: #f8f9fa;
@@ -46,10 +45,8 @@
 .main-image {
     display: block;
     margin: 0 auto 30px;
-    width: 1195px;
-    height: 60vh;
-    /* max-width: 600px; */
-    transition: transform 0.5s ease;
+  width: 100%;
+   transition: transform 0.5s ease;  
 }
     .main-image:hover {
       transform: scale(1.03);
@@ -217,9 +214,13 @@
     .share a:hover {
       color: #c0003b;
     }
+    .con:hover{
+      color: #c0003c;
+    }
 
     /* Responsive */
     @media (max-width: 768px) {
+      
       .image-right,
       .image-left {
         float: none;
@@ -324,6 +325,9 @@
     font-weight: bold;
     padding: 10px;
     font-size: 14px;
+}
+.related-item p:hover{
+  color: #c0003b;
 }
 
 

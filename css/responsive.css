@@ -1,26 +1,281 @@
-  /* Mobile styles */
-    @media (max-width: 768px) {
-      .menu-toggle {
-        display: block;
-      }
+@media (max-width: 1024px) {
+ 
+    
+  .lastnav {
+    width: 100%;
+  }
 
-      nav {
-        display: none;
-        flex-direction: column;
-        background-color: #fff;
-        position: absolute;
-        top: 100%;
-        left: 0;
+  .lastnav p {
+    margin-left: 55px;
+
+  }
+
+  .last-part {
+
+    margin-left: -500px;
+  }
+
+  .lastpar {
+
+    margin-left: 577px;
+  }
+  .iconeswi{
+    left: 60px;
+  }
+
+.sidebar-title {
+        font-size: 12px;
+        font-weight: 500;
+    }
+  .vedio-par{
+    height: 87vh !important;
+  }
+}
+
+@media (max-width: 540px) { 
+  .vedio-par{
+    height: 55vh !important;
+  }
+}
+@media (max-width: 375px) {
+  .related-item img {
+    height: 127px;
+    
+}
+ .vedio-par{
+    height: 72vh !important;
+  }
+}
+@media (max-width: 412px) {
+   .related-item img {
+    height: 127px;
+    
+}
+ .vedio-par{
+    height: 72vh !important;
+  }
+}
+
+@media (max-width: 853px) {
+  .nav-links a{
+
+  }
+  
+}
+@media (max-width: 768px) {
+  .vedio-par{
+    height: 51vh !important;
+  }
+
+  .lastnav p {
+    margin-top: 10px !important;
+    margin-left: 10px !important;
+    color: #fff;
+    font-size: 10px !important;
+  }
+
+  .lastpar {
+    margin-left: 300px !important;
+  }
+
+  .lastnav {
+    background-color: #ce0f2e;
+    height: 40px;
+    width: 628px !important;
+  }
+
+.recent-posts {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+        width: 372px !important;
+    
+  }
+  .main-image {
+    display: block;
+    margin: 0 auto 30px;
+
+    transition: transform 0.5s ease;
+}
+.sidebar-post img{
+  width: 31% !important;
+}
+}
+
+@media (max-width: 412px) {
+  .lastnav {
+
+    width: 716px !important;
+  }
+
+}
+
+@media (max-width: 414px) {
+  .lastnav {
+    background-color: #ce0f2e;
+    height: 40px;
+    width: 719px !important;
+  }
+
+  .lastnav p {
+    margin-left: 20px !important;
+
+  }
+
+}
+
+/* Mobile styles */
+@media (max-width: 430px) {
+  .lastnav p {
+    margin-left: 20px !important;
+
+  }
+
+  .lastnav {
+    width: 734px !important;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  nav .nav-link {
+    padding: 0.5rem 0;
+  }
+}
+
+/* Responsive slide widths */
+@media (min-width: 600px) {
+  .video-slider-item {
+    min-width: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  .video-slider-item {
+    min-width: 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .video-slider-item {
+    min-width: 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+@media (min-width: 768px) {
+  .video-slider-item {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 576px) {
+
+
+
+  .sidebar-title {
+    font-size: 13px;
+  }
+
+  .sidebar-content small,
+  .sidebar-content .time {
+    font-size: 12px;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    background-color: #ce0f2e !important;
+    color: #fff;
+  }
+
+  .slide-content {
+    max-width: 80%;
+    right: 20px;
+    padding: 20px;
+  }
+
+  .slide-content h2 {
+    font-size: 22px;
+  }
+
+  .slide-content p {
+    font-size: 16px;
+  }
+
+  .custom-nav {
+    left: 20px;
+  }
+
+  .swiper-button-custom {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+  }
+
+
+
+  /* Sidebar responsive */
+
+      .sidebar-post {
+        margin-top: 37px;
+        margin-left: 8px;
         width: 100%;
-        padding: 1rem 2rem;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+      .sidebar-post img {
+        height: 87px !important;
+        width: 133px !important;
+    }
+ .sidebar-content {
+        margin-top: 0px;
+    }
+
+
+
+
+}
+    @media (max-width: 768px) {
+      .custom-card img {
+        width: 80px;
+        height: 60px;
       }
 
-      nav.show {
-        display: flex;
+      .custom-card-text p {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .custom-section-container {
+        flex-direction: column;
+        align-items: center;
       }
 
-      nav .nav-link {
-        padding: 0.5rem 0;
+      .custom-category-title {
+        font-size: 22px;
       }
     }

@@ -36,7 +36,6 @@ header {
   position: sticky;
   top: 0;
   z-index: 999;
-  background-color: #fff;
 }
 
 /* Navbar */
@@ -113,7 +112,7 @@ header {
 }
 
 /* Last Navigation */
-.lastnav {
+/* .lastnav {
   background-color: #ce0f2e;
   height: 40px;
 }
@@ -130,8 +129,63 @@ header {
 .lastpar {
   display: flex;
   margin-left: 290px;
-}
+} */
+   .top-nav {
+      background-color: #ce0f2e;
+      color: #fff;
+      margin-top: -23px;
+      padding: 10px 20px;
+    }
 
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    .cart {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+    }
+
+    .cart::before {
+      content: "🛒";
+      margin-right: 5px;
+    }
+/* 
+@media (max-width: 600px) {
+  .nav-container {
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
+  .nav-links {
+    overflow-x: auto; 
+    white-space: nowrap;
+  }
+
+  .cart {
+    margin-left: auto; 
+  }
+
+    } */
 /* Swiper Slider */
 .swiper {
   width: 100%;
@@ -208,11 +262,15 @@ header {
   overflow: hidden;
   border-radius: 6px;
 }
+.main-post:hover{
+  color: #c4002f;
+  text-decoration: underline;
+  cursor: pointer;
+}
 .main-post img,
 .sidebar-post img {
   width: 100%;
   height: auto;
-  object-fit: cover;
   transition: transform 0.4s ease-in-out, box-shadow 0.3s ease;
 }
 .main-post img:hover,
@@ -276,6 +334,10 @@ header {
 .sidebar-title {
   font-weight: bold;
 }
+.sidebar-post:hover{
+  color: #c4002f;
+  cursor: pointer;
+}
 .see-all {
   text-align: center;
   margin-top: 30px;
@@ -296,27 +358,106 @@ header {
 }
 
 /* Fouth Start */
-.fourpart{
-  max-width: 1280px;
-  margin: auto;
-}
-.fourcontent{
-  margin-top: 40px;
-    display: flex;
+  .custom-section-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-}
-.sidebar-post {
-    margin-top: 40px;
+    .custom-category-column {
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+    }
 
-    display: flex;
-    width: 472px;
-    gap: 15px;
-    height: 85px !important;
-    margin-bottom: 20px;
+    .custom-category-title {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .custom-category-title::before {
+      content: '\25A0';
+      color: #ce0f2e;
+      margin-right: 8px;
+    }
+
+    .custom-card {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+      gap: 15px;
+      padding: 10px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+.custom-card
+ {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border: none;
+    box-shadow: none !important;
 }
-.secound{
-  margin-left: 350px;
-}
+    .custom-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .custom-card img {
+      width: 100px;
+      height: 70px;
+      object-fit: cover;
+      flex-shrink: 0;
+      border-radius: 4px;
+    }
+
+    .custom-card-text {
+      flex-grow: 1;
+    }
+
+    .custom-card-text small {
+      font-size: 12px;
+      color: #ce0f2e;
+      font-weight: bold;
+    }
+
+    .custom-card-text small span {
+      color: #777;
+      font-weight: normal;
+    }
+
+    .custom-card-text p {
+      font-size: 15px;
+      color: #000;
+      margin-top: 5px;
+      transition: color 0.3s ease;
+    }
+
+    .custom-card:hover .custom-card-text p {
+      color: #ce0f2e;
+    }
+
+    .custom-btn {
+      margin-top: 20px;
+      display: inline-block;
+      border: 1px solid #ce0f2e;
+      color: #ce0f2e;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    .custom-btn:hover {
+      background-color: #ce0f2e;
+      color: #fff;
+    }
+
 
 
 
@@ -365,7 +506,6 @@ header {
     color: #888;
     font-size: 0.75rem;
   }
-
 
 /* All Card Section End */
 
@@ -471,91 +611,7 @@ header {
 /* Vedio Slaider */
 
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .navbar{
-    background-color: #ce0f2e !important;
-    color: #fff;
-  }
-  
-  .slide-content {
-    max-width: 80%;
-    right: 20px;
-    padding: 20px;
-  }
-  .slide-content h2 {
-    font-size: 22px;
-  }
-  .slide-content p {
-    font-size: 16px;
-  }
-  .custom-nav {
-    left: 20px;
-  }
-  .swiper-button-custom {
-    width: 40px;
-    height: 40px;
-    font-size: 22px;
-  }
-  .sidebar-post{
-    width: 50%;
-    display: flex;
-    float: left;
-    
-  }
-  /* Sidebar responsive */
 
-  .lastnav {
-    background-color: #ce0f2e;
-    height: 40px;
-    width: 783px;
-}
-  .sidebar-post {
-    margin-top: 150px;
-    flex-direction: row;
-    width: 50%;
-  }
-.sidebar-post img {
-        position: absolute;
-        width: 45%;
-        margin-left: 0px;
-        margin-top: -55px;
-        height: auto;
-    
-    }
-    .sidebar-content{
-    margin-top: 100px;
-  }
-    .lastnav p {
-    margin-top: 10px;
-    margin-left: 25px;
-    color: #fff;
-    font-size: 10px;
-}
-}
-
-    @media (min-width: 768px) {
-      .video-slider-item {
-        margin: 0 10px;
-      }
-    }
-
-@media (max-width: 576px) {
-  .fourcontent {
-    margin-top: 40px;
-    display: block;
-}
-.secound {
-    margin-left: 0px;
-}
-  .sidebar-title {
-    font-size: 13px;
-  }
-  .sidebar-content small,
-  .sidebar-content .time {
-    font-size: 12px;
-  }
-}
 
    .vedio-par {
     margin-top: 40px;
@@ -611,6 +667,7 @@ header {
     .video-title {
       font-size: 1rem;
       font-weight: bold;
+      color: #fff;
       margin-top: 5px;
     }
 
@@ -647,24 +704,3 @@ header {
       background: rgba(255, 255, 255, 0.2);
     }
 
-    /* Responsive slide widths */
-    @media (min-width: 600px) {
-      .video-slider-item {
-        min-width: 50%;
-        max-width: 50%;
-      }
-    }
-
-    @media (min-width: 900px) {
-      .video-slider-item {
-        min-width: 33.3333%;
-        max-width: 33.3333%;
-      }
-    }
-
-    @media (min-width: 1200px) {
-      .video-slider-item {
-        min-width: 33.3333%;
-        max-width: 33.3333%;
-      }
-    }
