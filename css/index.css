@@ -3,10 +3,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Inter, "IBM Plex Sans Arabic", sans-serif !important;
 }
-body {
-  font-family: Arial, sans-serif;
-}
+
 .Allcontainer {
   max-width: 1280px;
   margin: auto;
@@ -17,17 +16,21 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 1280px;
+  margin: auto;
+  height: 50px;
   padding: 0.5rem 2rem;
-  background-color: #f4f4f4;
   font-size: 0.9rem;
-  border-bottom: 1px solid #ddd;
+ 
 }
 .top-header .left span {
   margin-right: 1rem;
 }
 .top-header .right a {
   margin-left: 1rem;
-  color: #333;
+  font-size: 14px;
+  color: rgb(33, 37, 41);
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -132,6 +135,8 @@ header {
 } */
    .top-nav {
       background-color: #ce0f2e;
+      font-size: 14px;
+      font-weight: 600;
       color: #fff;
       margin-top: -23px;
       padding: 10px 20px;
@@ -264,7 +269,6 @@ header {
 }
 .main-post:hover{
   color: #c4002f;
-  text-decoration: underline;
   cursor: pointer;
 }
 .main-post img,
@@ -291,12 +295,12 @@ header {
 /* Post Details */
 
 .main-post-title {
-  font-size: 22px;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: 600;
   margin: 15px 0 10px;
 }
 .main-post-excerpt {
-  font-size: 15px;
+  font-size: 14px;
   color: #666;
 }
 .author {
@@ -332,7 +336,8 @@ header {
   font-size: 13px;
 }
 .sidebar-title {
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 600;
 }
 .sidebar-post:hover{
   color: #c4002f;
