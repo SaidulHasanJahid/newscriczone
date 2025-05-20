@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+
 /* Reset and base styles */
 * {
   margin: 0;
@@ -49,10 +53,14 @@
   padding: 13px 20px;
   align-items: center;
 }
-.logo {
-  font-size: 1.5rem;
+.logoh {
+
   font-weight: bold;
-  color: #d10000;
+  font-size: 24px !important;
+  margin-left: 10px;
+  text-decoration: none !important ;
+ font-family: 'Arimo', sans-serif;
+  color: #c4002f !important;
 }
 /* Mega dropdown styling */
 .mega-dropdown {
@@ -138,16 +146,16 @@
       display: flex;
       flex-wrap: wrap;
       gap: 15px;
+      margin-left: -35px;
     }
-
-    .nav-links a {
-      color: #fff;
-      text-decoration: none;
+    .nav-links a{
       font-size: 14px;
-      white-space: nowrap;
-    }
+      font-weight: 600;
+      text-decoration: none;
+      color: #fff !important;
 
-    .cart {
+    }
+    .cart { 
       font-size: 14px;
       display: flex;
       align-items: center;
