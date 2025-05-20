@@ -1,6 +1,8 @@
-   const toggle = document.getElementById('menu-toggle');
-    const nav = document.querySelector('nav');
-
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('show');
-    });
+  window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 10) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });

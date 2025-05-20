@@ -1,428 +1,617 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CricZone</title>
-      <link rel="icon" type="image/x-icon" href="/images/logonews.jpg">
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/responsive.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CricZone</title>
+  <link rel="icon" type="image/x-icon" href="/images/logonews.jpg">
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
- <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
-  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" />
   <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-  </head>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
 
-  <body>
-    
-    <div class="" >
-     <div class=""style=" border-bottom: 1px solid #ddd;">
-       <div class="top-header" >
-        <div class="left">
-          <span><svg height="16" style="margin-right:10"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256L28.5 28c2-16 15.6-28 31.8-28H228.9c15 0 27.1 12.1 27.1 27.1c0 3.2-.6 6.5-1.7 9.5L208 160H347.3c20.2 0 36.7 16.4 36.7 36.7c0 7.4-2.2 14.6-6.4 20.7l-192.2 281c-5.9 8.6-15.6 13.7-25.9 13.7h-2.9c-15.7 0-28.5-12.8-28.5-28.5c0-2.3 .3-4.6 .9-6.9L176 288H32c-17.7 0-32-14.3-32-32z"/></svg>Storm - 10°C</span>
+<body>
+
+  <div class="">
+    <div class="" style=" border-bottom: 1px solid #ddd;">
+      <div class="top-header">
+        <div class="left" style="color: rgb(102, 102, 102); font-size: 1px;">
+          <span><svg height="16" style="margin-right:10" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path
+                d="M0 256L28.5 28c2-16 15.6-28 31.8-28H228.9c15 0 27.1 12.1 27.1 27.1c0 3.2-.6 6.5-1.7 9.5L208 160H347.3c20.2 0 36.7 16.4 36.7 36.7c0 7.4-2.2 14.6-6.4 20.7l-192.2 281c-5.9 8.6-15.6 13.7-25.9 13.7h-2.9c-15.7 0-28.5-12.8-28.5-28.5c0-2.3 .3-4.6 .9-6.9L176 288H32c-17.7 0-32-14.3-32-32z" />
+            </svg><span style="border-right: 1px solid rgb(102, 102, 102);padding: 10px;">Storm - 10°C</span></span>
           <span>Deals</span>
           <span>Newsletter</span>
         </div>
         <div class="right">
-          <a href="#"><svg  height="16" style="margin-right:5; margin-bottom:5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z"/></svg> My bookmarks</a>
-          <a href="#"><svg height="16" style="margin-right:5; margin-bottom:5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/></svg> My account</a>
+          <a href="#"><svg height="16" style="margin-right:5; margin-bottom:5" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path
+                d="M0 48C0 21.5 21.5 0 48 0l0 48 0 393.4 130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4 336 48 48 48 48 0 336 0c26.5 0 48 21.5 48 48l0 440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488L0 48z" />
+            </svg> My bookmarks</a>
+          <a href="#"><svg height="16" style="margin-right:5; margin-bottom:5" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path
+                d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" />
+            </svg> My account</a>
         </div>
       </div>
-     </div>
-      <div class="Allcontainer">
-     <!-- Navber Start -->
-      <div class="navber" >
-      
-      <header>
-       <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm w-100 h-100" style="font-size: 18px;font-weight: 600;color: black;">
-    <div class="container" >
-    <a class="navbar-brand text-danger fw-bold" href="/index.html">The News</a>
-
-    <!-- Toggler (hamburger) for mobile -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="mainNavbar" >
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-        <!-- Mega Menu Dropdown -->
-        <li class="nav-item dropdown position-static">
-          <a class="nav-link dropdown-toggle" href="#" id="megaMenu" role="button" data-bs-toggle="dropdown">
-            Latest
-          </a>
-          <div class="dropdown-menu w-100 mega-dropdown shadow p-4 mt-0 border-0">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-3">
-                  <h6 class="text-uppercase fw-bold">Main Pages</h6>
-                  <a class="dropdown-item" href="#">Main</a>
-                  <a class="dropdown-item" href="#">Classic News</a>
-                  <a class="dropdown-item" href="#">Tech</a>
-                  <a class="dropdown-item" href="#">Gaming</a>
-                </div>
-                <div class="col-md-3">
-                  <h6 class="text-uppercase fw-bold">CMS Pages</h6>
-                  <a class="dropdown-item" href="#">Modern</a>
-                  <a class="dropdown-item" href="#">Classic</a>
-                  <a class="dropdown-item" href="#">Grid 2 cols</a>
-                </div>
-                <div class="col-md-3">
-                  <h6 class="text-uppercase fw-bold">Shop Pages</h6>
-                  <a class="dropdown-item" href="#">Grid 4 cols</a>
-                  <a class="dropdown-item" href="#">Product detail</a>
-                  <a class="dropdown-item" href="#">Cart</a>
-                </div>
-                <div class="col-md-3">
-                  <h6 class="text-uppercase fw-bold">Other Pages</h6>
-                  <a class="dropdown-item" href="#">Sign in</a>
-                  <a class="dropdown-item" href="#">404</a>
-                  <a class="dropdown-item" href="#">Terms of service</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-
-        <!-- Normal links -->
-        <li class="nav-item"><a class="nav-link " href="#">Trending</a></li>
-        <li class="nav-item"><a class="nav-link " href="#">News</a></li>
-        <li class="nav-item"><a class="nav-link " href="#">Tech</a></li>
-        <li class="nav-item"><a class="nav-link " href="#">Science</a></li>
-      </ul>
-
-      <!-- Subscribe Button -->
-      <a href="#" class="btn btn-danger">Subscribe</a>
     </div>
   </div>
-</nav>
+
+  <div class="Allcontainer"
+    style="  position: sticky;top: 0; z-index: 1050; background-color: transparent;transition: background-color 0.4s ease, box-shadow 0.4s ease;">
+    <!-- Navber Start -->
+    <div class="navber">
+
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm w-100 h-100 scrolled"
+          style="font-size: 18px; font-weight: 600; color: black; transition: background-color 0.3s ease;">
+          <div class="container">
+            <a class="navbar-brand text-danger fw-bold" href="/index.html">The News</a>
+
+            <!-- Toggler (hamburger) for mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <!-- Mega Menu Dropdown -->
+                <li class="nav-item dropdown position-static">
+                  <a class="nav-link dropdown-toggle" href="#" id="megaMenu" role="button" data-bs-toggle="dropdown">
+                    Latest
+                  </a>
+                  <div class="dropdown-menu w-100 mega-dropdown shadow p-4 mt-0 border-0">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <h6 class="text-uppercase fw-bold">Main Pages</h6>
+                          <a class="dropdown-item" href="#">Main</a>
+                          <a class="dropdown-item" href="#">Classic News</a>
+                          <a class="dropdown-item" href="#">Tech</a>
+                          <a class="dropdown-item" href="#">Gaming</a>
+                        </div>
+                        <div class="col-md-3">
+                          <h6 class="text-uppercase fw-bold">CMS Pages</h6>
+                          <a class="dropdown-item" href="#">Modern</a>
+                          <a class="dropdown-item" href="#">Classic</a>
+                          <a class="dropdown-item" href="#">Grid 2 cols</a>
+                        </div>
+                        <div class="col-md-3">
+                          <h6 class="text-uppercase fw-bold">Shop Pages</h6>
+                          <a class="dropdown-item" href="#">Grid 4 cols</a>
+                          <a class="dropdown-item" href="#">Product detail</a>
+                          <a class="dropdown-item" href="#">Cart</a>
+                        </div>
+                        <div class="col-md-3">
+                          <h6 class="text-uppercase fw-bold">Other Pages</h6>
+                          <a class="dropdown-item" href="#">Sign in</a>
+                          <a class="dropdown-item" href="#">404</a>
+                          <a class="dropdown-item" href="#">Terms of service</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- Normal links -->
+               
+                   <!-- Mega Menu Dropdown -->
+                <li class="nav-item dropdown position-static">
+                  <a class="nav-link dropdown-toggle" href="#" id="megaMenu" role="button" data-bs-toggle="dropdown">
+                   Trending
+                  </a>
+                  <div class="dropdown-menu w-100 mega-dropdown shadow p-4 mt-0 border-0">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <h6 class="text-uppercase fw-bold">Main Pages</h6>
+                          <a class="dropdown-item" href="#">Main</a>
+                          <a class="dropdown-item" href="#">Classic News</a>
+                          <a class="dropdown-item" href="#">Tech</a>
+                          <a class="dropdown-item" href="#">Gaming</a>
+                        </div>
+                        <div class="col-md-3">
+                          <h6 class="text-uppercase fw-bold">CMS Pages</h6>
+                          <a class="dropdown-item" href="#">Modern</a>
+                          <a class="dropdown-item" href="#">Classic</a>
+                          <a class="dropdown-item" href="#">Grid 2 cols</a>
+                        </div>
+                        <div class="col-md-3">
+                          <h6 class="text-uppercase fw-bold">Shop Pages</h6>
+                          <a class="dropdown-item" href="#">Grid 4 cols</a>
+                          <a class="dropdown-item" href="#">Product detail</a>
+                          <a class="dropdown-item" href="#">Cart</a>
+                        </div>
+                        <div class="col-md-3">
+                          <h6 class="text-uppercase fw-bold">Other Pages</h6>
+                          <a class="dropdown-item" href="#">Sign in</a>
+                          <a class="dropdown-item" href="#">404</a>
+                          <a class="dropdown-item" href="#">Terms of service</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                   <!-- Mega Menu Dropdown -->
+                <li class="nav-item dropdown position-static">
+                  <a class="nav-link dropdown-toggle" href="#" id="megaMenu" role="button" data-bs-toggle="dropdown">
+                    News
+                  </a>
+                  <div class="dropdown-menu w-100 mega-dropdown shadow p-4 mt-0 border-0">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <h6 class="text-uppercase fw-bold">Main Pages</h6>
+                          <a class="dropdown-item" href="#">Main</a>
+                          <a class="dropdown-item" href="#">Classic News</a>
+                          <a class="dropdown-item" href="#">Tech</a>
+                          <a class="dropdown-item" href="#">Gaming</a>
+                        </div>
+                        <div class="col-md-3">
+                          <h6 class="text-uppercase fw-bold">CMS Pages</h6>
+                          <a class="dropdown-item" href="#">Modern</a>
+                          <a class="dropdown-item" href="#">Classic</a>
+                          <a class="dropdown-item" href="#">Grid 2 cols</a>
+                        </div>
+                        <div class="col-md-3">
+                          <h6 class="text-uppercase fw-bold">Shop Pages</h6>
+                          <a class="dropdown-item" href="#">Grid 4 cols</a>
+                          <a class="dropdown-item" href="#">Product detail</a>
+                          <a class="dropdown-item" href="#">Cart</a>
+                        </div>
+                        <div class="col-md-3">
+                          <h6 class="text-uppercase fw-bold">Other Pages</h6>
+                          <a class="dropdown-item" href="#">Sign in</a>
+                          <a class="dropdown-item" href="#">404</a>
+                          <a class="dropdown-item" href="#">Terms of service</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                   <!-- Mega Menu Dropdown -->
+                <li class="nav-item dropdown position-static">
+                  <a class="nav-link dropdown-toggle" href="#" id="megaMenu" role="button" data-bs-toggle="dropdown">
+                    Tech
+                  </a>
+                  <div class="dropdown-menu w-100 mega-dropdown shadow p-4 mt-0 border-0">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <h6 class="text-uppercase fw-bold">Main Pages</h6>
+                          <a class="dropdown-item" href="#">Main</a>
+                          <a class="dropdown-item" href="#">Classic News</a>
+                          <a class="dropdown-item" href="#">Tech</a>
+                          <a class="dropdown-item" href="#">Gaming</a>
+                        </div>
+                        <div class="col-md-3">
+                          <h6 class="text-uppercase fw-bold">CMS Pages</h6>
+                          <a class="dropdown-item" href="#">Modern</a>
+                          <a class="dropdown-item" href="#">Classic</a>
+                          <a class="dropdown-item" href="#">Grid 2 cols</a>
+                        </div>
+                        <div class="col-md-3">
+                          <h6 class="text-uppercase fw-bold">Shop Pages</h6>
+                          <a class="dropdown-item" href="#">Grid 4 cols</a>
+                          <a class="dropdown-item" href="#">Product detail</a>
+                          <a class="dropdown-item" href="#">Cart</a>
+                        </div>
+                        <div class="col-md-3">
+                          <h6 class="text-uppercase fw-bold">Other Pages</h6>
+                          <a class="dropdown-item" href="#">Sign in</a>
+                          <a class="dropdown-item" href="#">404</a>
+                          <a class="dropdown-item" href="#">Terms of service</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item"><a class="nav-link " href="#">Science</a></li>
+              </ul>
+
+              <!-- Subscribe Button -->
+              <a href="#" class="btn btn-danger">Subscribe</a>
+            </div>
+          </div>
+        </nav>
 
         <br />
 
-     
+
       </header>
-      </div>
     </div>
-    </div>
-
-
-<div class="top-nav">
-  <div class="nav-container">
-    <div class="nav-links">
-      <a href="#">Tech</a>
-      <a href="#">Gadgets</a>
-      <a href="#">Science</a>
-      <a href="#">Travel</a>
-      <a href="#">Business</a>
-      <a href="#">Marketing</a>
-      <a href="#">Startups</a>
-      <a href="#">AI</a>
-    </div>
-    <div class="cart">Cart (0)</div>
   </div>
-</div>
-    <!-- Slider Part Start  -->
-    <!-- Swiper Slider -->
-    <div class="swiper mySwiper">
+
+  <div class="top-nav">
+    <div class="nav-container">
+      <div class="nav-links">
+        <a href="#">Tech</a>
+        <a href="#">Gadgets</a>
+        <a href="#">Science</a>
+        <a href="#">Travel</a>
+        <a href="#">Business</a>
+        <a href="#">Marketing</a>
+        <a href="#">Startups</a>
+        <a href="#">AI</a>
+      </div>
+      <div class="cart">Cart (0)</div>
+    </div>
+  </div>
+  <!-- Slider Part Start  -->
+  <!-- Swiper Slider -->
+  <div class="main-slider-wrapper">
+    <div class="main-arrows">
+      <div class="main-arrow-btn main-prev">❮</div>
+      <div class="main-arrow-btn main-next">❯</div>
+    </div>
+
+    <div class="swiper main-swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="./images/slaider3.webp" alt="Nature" class="slide-img" />
-          <div class="slide-overlay"></div>
-          <div class="slide-content">
-            <h2>Eco-Tourism: Traveling Responsibly</h2>
-            <p>Explore sustainable travel experiences in untouched environments.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/slaiderimage1.jpg" alt="Technology" class="slide-img" />
-          <div class="slide-overlay"></div>
-          <div class="slide-content">
-            <h2>AI & Retail Innovation</h2>
-            <p>Discover how artificial intelligence is reshaping payment systems.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="./images/sliderimages2.webp" alt="Ocean" class="slide-img" />
-          <div class="slide-overlay"></div>
-          <div class="slide-content">
-            <h2>Balancing Work & Wellness</h2>
-            <p>Technology-driven approaches to a healthier lifestyle.</p>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Custom Arrows Together -->
-      <div class="custom-nav">
-        <div class="swiper-button-custom swiper-button-prev">&#10094;</div>
-        <div class="swiper-button-custom swiper-button-next">&#10095;</div>
-      </div>
-    </div>
-     
-    <!-- Slider Part End  -->
-    <!-- third Part Start  -->
-    <div class="thirdpart">
-      <!-- Technology Part Start -->
 
-
-  <div class="container">
-    <div class="section-title">Litton Kumar Das</div>
-    <div class="row">
-      <!-- Main Post -->
-      <div class="col-lg-8 mb-4">
-        <div class="main-post">
-
-            <div class="image-wrapper" >
-          <img src="./images/litton.6.webp" alt="Main Post Image">
-        </div>
-          <div class="text-danger small mt-2">Gadgets <span class="text-muted">| 1min ago</span></div>
-          <div class="main-post-title">
-            The Rise of AI-Powered Personal Assistants: How They Manage
-          </div>
-
-
-          <div class="main-post-excerpt">
-            Law enforcement officers have been accused of sexually abusing children over the past two decades...<br />
-            Nisi dignissim tortor sed quam sed ipsum ut. Dolor sit amet, consectetur adipiscing elit. <a href=""> Larn moe.</a>
-          </div>
-          <div class="author mt-3">
-            <img src="./images/card1.webp" alt="Author" />
-            <span>David Peterson</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Sidebar Posts -->
-      <div class="col-lg-4">
-        <div class="sidebar-post">
-          <img src="./images/card2.webp" alt="Post Thumbnail">
-          <div class="sidebar-content">
-            <small>Startups</small> <span class="time">| 55min ago</span>
-            <div class="sidebar-title">
-              Tech Innovations Reshaping the Retail Landscape: AI Payments
+        <!-- Slide 1 -->
+        <div class="swiper-slide main-slide">
+          <img src="./images/slaiderimage1.jpg" class="main-slide-img" alt="Slide 1">
+          <div class="main-overlay">
+            <div class="main-left-content">
+              <span class="main-tag">Trips</span>
+              <h2 class="main-title">Eco-Tourism: Traveling Responsibly and Sustainably</h2>
+              <div class="main-meta">
+                <span>By <strong>David Peterson</strong></span>
+                <span>Feb 8, 2025</span>
+                <span>💬 20</span>
+              </div>
+            </div>
+            <div class="main-right-list">
+              <div class="main-right-item">
+                <span class="main-right-date">Mar 8, 2025</span>
+                <div class="main-right-title">The Rise of AI-Powered Assistants</div>
+              </div>
+              <div class="main-right-item">
+                <span class="main-right-date">Mar 8, 2025</span>
+                <div class="main-right-title">Retail Tech: AI Payments Lead the Way</div>
+              </div>
+              <div class="main-right-item">
+                <span class="main-right-date">Mar 8, 2025</span>
+                <div class="main-right-title">Wellness with Smart Tech</div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="sidebar-post">
-          <img src="images/card3.webp" alt="Post Thumbnail">
-          <div class="sidebar-content">
-            <small>Gadgets</small> <span class="time">| 1h ago</span>
-            <div class="sidebar-title">
-              Balancing Work and Wellness: Tech Solutions for Healthy
+        <!-- Slide 2 -->
+        <div class="swiper-slide main-slide">
+          <img src="./images/sliderimages2.webp" class="main-slide-img" alt="Slide 2">
+          <div class="main-overlay">
+            <div class="main-left-content">
+              <span class="main-tag">Tech</span>
+              <h2 class="main-title">AI Changing How We Work and Think</h2>
+              <div class="main-meta">
+                <span>By <strong>Sara Mills</strong></span>
+                <span>Mar 5, 2025</span>
+                <span>💬 15</span>
+              </div>
+            </div>
+            <div class="main-right-list">
+              <div class="main-right-item">
+                <span class="main-right-date">Mar 6, 2025</span>
+                <div class="main-right-title">AI Tools Every Team Needs</div>
+              </div>
+              <div class="main-right-item">
+                <span class="main-right-date">Mar 6, 2025</span>
+                <div class="main-right-title">Building Smarter Apps</div>
+              </div>
+              <div class="main-right-item">
+                <span class="main-right-date">Mar 6, 2025</span>
+                <div class="main-right-title">The Next Wave of Innovation</div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="sidebar-post">
-          <img src="./images/card4.webp" alt="Post Thumbnail">
-          <div class="sidebar-content">
-            <small>AI Powered</small> <span class="time">| 2h ago</span>
-            <div class="sidebar-title">
-              The Importance of Sleep: Tips for Better Rest and Recovery
+        <!-- Slide 3 -->
+        <div class="swiper-slide main-slide">
+          <img src="./images/slaider3.webp" class="main-slide-img" alt="Slide 3">
+          <div class="main-overlay">
+            <div class="main-left-content">
+              <span class="main-tag">Health</span>
+              <h2 class="main-title">Balancing Tech with a Healthy Lifestyle</h2>
+              <div class="main-meta">
+                <span>By <strong>Michael Lee</strong></span>
+                <span>Mar 10, 2025</span>
+                <span>💬 12</span>
+              </div>
+            </div>
+            <div class="main-right-list">
+              <div class="main-right-item">
+                <span class="main-right-date">Mar 11, 2025</span>
+                <div class="main-right-title">Digital Detox Methods</div>
+              </div>
+              <div class="main-right-item">
+                <span class="main-right-date">Mar 11, 2025</span>
+                <div class="main-right-title">Sleep Better With Tech</div>
+              </div>
+              <div class="main-right-item">
+                <span class="main-right-date">Mar 11, 2025</span>
+                <div class="main-right-title">Wellness App Review</div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="sidebar-post">
-          <img src="./images/card2.webp" alt="Post Thumbnail">
-          <div class="sidebar-content">
-            <small>AI Powered</small> <span class="time">| 12h ago</span>
-            <div class="sidebar-title">
-              The Future of Sustainable Living: Driving Eco-Friendly Lifestyles
-            </div>
-          </div>
-        </div>
-        <div class="sidebar-post">
-          <img src="./images/card1.webp" alt="Post Thumbnail">
-          <div class="sidebar-content">
-            <small>Tech</small> <span class="time">| 7d ago</span>
-          
-          </div>
-        </div>
-        <div class="see-all">
-          <button class="btn btn-light border text-danger btnSeeall">See all Tech</button>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- Technology Part End -->
 
-
-<!-- Security Part Start -->
-
-  <div class="container">
-    <div class="section-title">Security</div>
-    <div class="row">
-      <!-- Main Post -->
-      <div class="col-lg-8 mb-4">
-        <div class="main-post">
-          <div class="image-wrapper">
-          <img src="./images/ladis.webp" alt="Main Post Image">
-        </div>
-          <div class="text-danger small mt-2">Gadgets <span class="text-muted">| 1min ago</span></div>
-          <div class="main-post-title">
-            The Rise of AI-Powered Personal Assistants: How They Manage
-          </div>
-          <div class="main-post-excerpt">
-            Law enforcement officers have been accused of sexually abusing children over the past two decades...<br />
-            Nisi dignissim tortor sed quam sed ipsum ut. Dolor sit amet, consectetur adipiscing elit.
-          </div>
-          <div class="author mt-3">
-            <img src="./images/card1.webp" alt="Author" />
-            <span>David Peterson</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Sidebar Posts -->
-      <div class="col-lg-4">
-        <div class="sidebar-post">
-          
-          <img src="./images/card2.webp" alt="Post Thumbnail">
-          <div class="sidebar-content">
-            <small>Startups</small> <span class="time">| 55min ago</span>
-            <div class="sidebar-title">
-              Tech Innovations Reshaping the Retail Landscape: AI Payments
-            </div>
-          </div>
-        </div>
-        <div class="sidebar-post">
-          <img src="images/card3.webp" alt="Post Thumbnail">
-          <div class="sidebar-content">
-            <small>Gadgets</small> <span class="time">| 1h ago</span>
-            <div class="sidebar-title">
-              Balancing Work and Wellness: Tech Solutions for Healthy
-            </div>
-          </div>
-        </div>
-        <div class="sidebar-post">
-          <img src="./images/card4.webp" alt="Post Thumbnail">
-          <div class="sidebar-content">
-            <small>AI Powered</small> <span class="time">| 2h ago</span>
-            <div class="sidebar-title">
-              The Importance of Sleep: Tips for Better Rest and Recovery
-            </div>
-          </div>
-        </div>
-        <div class="sidebar-post">
-          <img src="./images/card2.webp" alt="Post Thumbnail">
-          <div class="sidebar-content">
-            <small>AI Powered</small> <span class="time">| 12h ago</span>
-            <div class="sidebar-title">
-              The Future of Sustainable Living: Driving Eco-Friendly Lifestyles
-            </div>
-          </div>
-        </div>
-        <div class="sidebar-post">
-          <img src="./images/card1.webp" alt="Post Thumbnail">
-          <div class="sidebar-content">
-            <small>Tech</small> <span class="time">| 7d ago</span>
-          
-          </div>
-        </div>
-        <div class="see-all">
-          <button class="btn btn-light border text-danger btnSeeall">See all Tech</button>
-        </div>
       </div>
     </div>
   </div>
 
-<!-- Security Part End -->
+  <!-- Slider Part End  -->
+  <!-- third Part Start  -->
+  <div class="thirdpart">
+    <!-- Technology Part Start -->
 
-<!-- Business Part Start -->
+
+    <div class="container">
+      <div class="section-title">Litton Kumar Das</div>
+      <div class="row">
+        <!-- Main Post -->
+        <div class="col-lg-8 mb-4">
+          <div class="main-post">
+
+            <div class="image-wrapper">
+              <img src="./images/litton.6.webp" alt="Main Post Image">
+            </div>
+            <div class="text-danger small mt-2">Gadgets <span class="text-muted">| 1min ago</span></div>
+            <div class="main-post-title">
+              The Rise of AI-Powered Personal Assistants: How They Manage
+            </div>
 
 
-  <div class="container">
-    <div class="section-title">Business</div>
-    <div class="row">
-      <!-- Main Post -->
-      <div class="col-lg-8 mb-4">
-        <div class="main-post">
-          <div class="image-wrapper">
-          <img src="./images/bangladesh.webp" alt="Main Post Image">
-        </div>
-          <div class="text-danger small mt-2">Gadgets <span class="text-muted">| 1min ago</span></div>
-          <div class="main-post-title">
-            The Rise of AI-Powered Personal Assistants: How They Manage
-          </div>
-          <div class="main-post-excerpt">
-            Law enforcement officers have been accused of sexually abusing children over the past two decades...<br />
-            Nisi dignissim tortor sed quam sed ipsum ut. Dolor sit amet, consectetur adipiscing elit.
-          </div>
-          <div class="author mt-3">
-            <img src="./images/card1.webp" alt="Author" />
-            <span>David Peterson</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Sidebar Posts -->
-      <div class="col-lg-4">
-        <div class="sidebar-post">
-          <img src="./images/card2.webp" alt="Post Thumbnail">
-          <div class="sidebar-content">
-            <small>Startups</small> <span class="time">| 55min ago</span>
-            <div class="sidebar-title">
-              Tech Innovations Reshaping the Retail Landscape: AI Payments
+            <div class="main-post-excerpt">
+              Law enforcement officers have been accused of sexually abusing children over the past two decades...<br />
+              Nisi dignissim tortor sed quam sed ipsum ut. Dolor sit amet, consectetur adipiscing elit. <a href=""> Larn
+                moe.</a>
+            </div>
+            <div class="author mt-3">
+              <img src="./images/card1.webp" alt="Author" />
+              <span>David Peterson</span>
             </div>
           </div>
         </div>
-        <div class="sidebar-post">
-          <img src="images/card3.webp" alt="Post Thumbnail">
-          <div class="sidebar-content">
-            <small>Gadgets</small> <span class="time">| 1h ago</span>
-            <div class="sidebar-title">
-              Balancing Work and Wellness: Tech Solutions for Healthy
+
+        <!-- Sidebar Posts -->
+        <div class="col-lg-4">
+          <div class="sidebar-post">
+            <img src="./images/card2.webp" alt="Post Thumbnail">
+            <div class="sidebar-content">
+              <small>Startups</small> <span class="time">| 55min ago</span>
+              <div class="sidebar-title">
+                Tech Innovations Reshaping the Retail Landscape: AI Payments
+              </div>
             </div>
           </div>
-        </div>
-        <div class="sidebar-post">
-          <img src="./images/card4.webp" alt="Post Thumbnail">
-          <div class="sidebar-content">
-            <small>AI Powered</small> <span class="time">| 2h ago</span>
-            <div class="sidebar-title">
-              The Importance of Sleep: Tips for Better Rest and Recovery
+
+          <div class="sidebar-post">
+            <img src="images/card3.webp" alt="Post Thumbnail">
+            <div class="sidebar-content">
+              <small>Gadgets</small> <span class="time">| 1h ago</span>
+              <div class="sidebar-title">
+                Balancing Work and Wellness: Tech Solutions for Healthy
+              </div>
             </div>
           </div>
-        </div>
-        <div class="sidebar-post">
-          <img src="./images/card2.webp" alt="Post Thumbnail">
-          <div class="sidebar-content">
-            <small>AI Powered</small> <span class="time">| 12h ago</span>
-            <div class="sidebar-title">
-              The Future of Sustainable Living: Driving Eco-Friendly Lifestyles
+
+          <div class="sidebar-post">
+            <img src="./images/card4.webp" alt="Post Thumbnail">
+            <div class="sidebar-content">
+              <small>AI Powered</small> <span class="time">| 2h ago</span>
+              <div class="sidebar-title">
+                The Importance of Sleep: Tips for Better Rest and Recovery
+              </div>
             </div>
           </div>
-        </div>
-        <div class="sidebar-post">
-          <img src="./images/card1.webp" alt="Post Thumbnail">
-          <div class="sidebar-content">
-            <small>Tech</small> <span class="time">| 7d ago</span>
-           
+          <div class="sidebar-post">
+            <img src="./images/card2.webp" alt="Post Thumbnail">
+            <div class="sidebar-content">
+              <small>AI Powered</small> <span class="time">| 12h ago</span>
+              <div class="sidebar-title">
+                The Future of Sustainable Living: Driving Eco-Friendly Lifestyles
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="see-all">
-          <button class="btn btn-light border text-danger btnSeeall">See all Tech</button>
+          <div class="sidebar-post">
+            <img src="./images/card1.webp" alt="Post Thumbnail">
+            <div class="sidebar-content">
+              <small>Tech</small> <span class="time">| 7d ago</span>
+
+            </div>
+          </div>
+          <div class="see-all">
+            <button class="btn btn-light border text-danger btnSeeall">See all Tech</button>
+          </div>
         </div>
       </div>
     </div>
+    <!-- Technology Part End -->
+
+
+    <!-- Security Part Start -->
+
+    <div class="container">
+      <div class="section-title">Security</div>
+      <div class="row">
+        <!-- Main Post -->
+        <div class="col-lg-8 mb-4">
+          <div class="main-post">
+            <div class="image-wrapper">
+              <img src="./images/ladis.webp" alt="Main Post Image">
+            </div>
+            <div class="text-danger small mt-2">Gadgets <span class="text-muted">| 1min ago</span></div>
+            <div class="main-post-title">
+              The Rise of AI-Powered Personal Assistants: How They Manage
+            </div>
+            <div class="main-post-excerpt">
+              Law enforcement officers have been accused of sexually abusing children over the past two decades...<br />
+              Nisi dignissim tortor sed quam sed ipsum ut. Dolor sit amet, consectetur adipiscing elit.
+            </div>
+            <div class="author mt-3">
+              <img src="./images/card1.webp" alt="Author" />
+              <span>David Peterson</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Posts -->
+        <div class="col-lg-4">
+          <div class="sidebar-post">
+
+            <img src="./images/card2.webp" alt="Post Thumbnail">
+            <div class="sidebar-content">
+              <small>Startups</small> <span class="time">| 55min ago</span>
+              <div class="sidebar-title">
+                Tech Innovations Reshaping the Retail Landscape: AI Payments
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-post">
+            <img src="images/card3.webp" alt="Post Thumbnail">
+            <div class="sidebar-content">
+              <small>Gadgets</small> <span class="time">| 1h ago</span>
+              <div class="sidebar-title">
+                Balancing Work and Wellness: Tech Solutions for Healthy
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-post">
+            <img src="./images/card4.webp" alt="Post Thumbnail">
+            <div class="sidebar-content">
+              <small>AI Powered</small> <span class="time">| 2h ago</span>
+              <div class="sidebar-title">
+                The Importance of Sleep: Tips for Better Rest and Recovery
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-post">
+            <img src="./images/card2.webp" alt="Post Thumbnail">
+            <div class="sidebar-content">
+              <small>AI Powered</small> <span class="time">| 12h ago</span>
+              <div class="sidebar-title">
+                The Future of Sustainable Living: Driving Eco-Friendly Lifestyles
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-post">
+            <img src="./images/card1.webp" alt="Post Thumbnail">
+            <div class="sidebar-content">
+              <small>Tech</small> <span class="time">| 7d ago</span>
+
+            </div>
+          </div>
+          <div class="see-all">
+            <button class="btn btn-light border text-danger btnSeeall">See all Tech</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Security Part End -->
+
+    <!-- Business Part Start -->
+
+
+    <div class="container">
+      <div class="section-title">Business</div>
+      <div class="row">
+        <!-- Main Post -->
+        <div class="col-lg-8 mb-4">
+          <div class="main-post">
+            <div class="image-wrapper">
+              <img src="./images/bangladesh.webp" alt="Main Post Image">
+            </div>
+            <div class="text-danger small mt-2">Gadgets <span class="text-muted">| 1min ago</span></div>
+            <div class="main-post-title">
+              The Rise of AI-Powered Personal Assistants: How They Manage
+            </div>
+            <div class="main-post-excerpt">
+              Law enforcement officers have been accused of sexually abusing children over the past two decades...<br />
+              Nisi dignissim tortor sed quam sed ipsum ut. Dolor sit amet, consectetur adipiscing elit.
+            </div>
+            <div class="author mt-3">
+              <img src="./images/card1.webp" alt="Author" />
+              <span>David Peterson</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Posts -->
+        <div class="col-lg-4">
+          <div class="sidebar-post">
+            <img src="./images/card2.webp" alt="Post Thumbnail">
+            <div class="sidebar-content">
+              <small>Startups</small> <span class="time">| 55min ago</span>
+              <div class="sidebar-title">
+                Tech Innovations Reshaping the Retail Landscape: AI Payments
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-post">
+            <img src="images/card3.webp" alt="Post Thumbnail">
+            <div class="sidebar-content">
+              <small>Gadgets</small> <span class="time">| 1h ago</span>
+              <div class="sidebar-title">
+                Balancing Work and Wellness: Tech Solutions for Healthy
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-post">
+            <img src="./images/card4.webp" alt="Post Thumbnail">
+            <div class="sidebar-content">
+              <small>AI Powered</small> <span class="time">| 2h ago</span>
+              <div class="sidebar-title">
+                The Importance of Sleep: Tips for Better Rest and Recovery
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-post">
+            <img src="./images/card2.webp" alt="Post Thumbnail">
+            <div class="sidebar-content">
+              <small>AI Powered</small> <span class="time">| 12h ago</span>
+              <div class="sidebar-title">
+                The Future of Sustainable Living: Driving Eco-Friendly Lifestyles
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-post">
+            <img src="./images/card1.webp" alt="Post Thumbnail">
+            <div class="sidebar-content">
+              <small>Tech</small> <span class="time">| 7d ago</span>
+
+            </div>
+          </div>
+          <div class="see-all">
+            <button class="btn btn-light border text-danger btnSeeall">See all Tech</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Business Part End -->
   </div>
-  
-<!-- Business Part End -->
-    </div>
-    <!-- third Part End  -->
+  <!-- third Part End  -->
 
 
- <div class="custom-section-container">
+  <div class="custom-section-container">
     <!-- Gadgets Column -->
     <div class="custom-category-column">
       <h2 class="custom-category-title">Gadgets</h2>
@@ -501,7 +690,7 @@
       <a href="#" class="custom-btn  w-100  text-center">See all Science</a>
     </div>
   </div>
- <!-- Swiper last  -->
+  <!-- Swiper last  -->
   <div class="vedio-par">
     <div class="container">
       <div class="vediopart">
@@ -549,351 +738,351 @@
       </div>
     </div>
   </div>
- <!-- Swiper last  -->
+  <!-- Swiper last  -->
 
- <!-- Allcard Section -->
-<div class="container my-5">
+  <!-- Allcard Section -->
+  <div class="container my-5">
 
-      <div class="section-title">
-Latest news</div>
+    <div class="section-title">
+      Latest news</div>
 
-  <div class="row g-4">
+    <div class="row g-4">
 
-    <!-- CARD START -->
-    <div class="col-12 col-sm-6 col-lg-3">
-      <div class="card h-100 position-relative">
-        <i class="bi bi-bookmark bookmark-icon"></i>
-       <div class="image-wareper" style="height: 180px;">
-         <img src="https://picsum.photos/400/250?random=1" class="card-img-top h-100 w-100" alt="...">
-       </div>
-        <div class="card-body">
-          <div>
-            <small>Startups</small> <span class="card-time">| 3mo ago</span>
+      <!-- CARD START -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 position-relative">
+          <i class="bi bi-bookmark bookmark-icon"></i>
+          <div class="image-wareper" style="height: 180px;">
+            <img src="https://picsum.photos/400/250?random=1" class="card-img-top h-100 w-100" alt="...">
           </div>
-          <h6 class="card-title">Tech Tools for Your Time Management</h6>
+          <div class="card-body">
+            <div>
+              <small>Startups</small> <span class="card-time">| 3mo ago</span>
+            </div>
+            <h6 class="card-title">Tech Tools for Your Time Management</h6>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- CARD END -->
+      <!-- CARD END -->
 
-    <div class="col-12 col-sm-6 col-lg-3">
-      <div class="card h-100 position-relative">
-        <i class="bi bi-bookmark bookmark-icon"></i>
-            <div class="image-wareper" style="height: 180px;">
-         <img src="./images/bangladesh.webp" class="card-img-top h-100 w-100" alt="...">
-       </div>
-        <div class="card-body">
-          <div>
-            <small>AI Powered</small> <span class="card-time">| 6mo ago</span>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 position-relative">
+          <i class="bi bi-bookmark bookmark-icon"></i>
+          <div class="image-wareper" style="height: 180px;">
+            <img src="./images/bangladesh.webp" class="card-img-top h-100 w-100" alt="...">
           </div>
-          <h6 class="card-title">The Rise of Gourmet Street Food</h6>
+          <div class="card-body">
+            <div>
+              <small>AI Powered</small> <span class="card-time">| 6mo ago</span>
+            </div>
+            <h6 class="card-title">The Rise of Gourmet Street Food</h6>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-lg-3">
-      <div class="card h-100 position-relative">
-        <i class="bi bi-bookmark bookmark-icon"></i>
-            <div class="image-wareper" style="height: 180px;">
-         <img src="./images/busimg.webp" class="card-img-top h-100 w-100" alt="...">
-       </div>
-        <div class="card-body">
-          <div>
-            <small>Virtual Reality</small> <span class="card-time">| 9mo ago</span>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 position-relative">
+          <i class="bi bi-bookmark bookmark-icon"></i>
+          <div class="image-wareper" style="height: 180px;">
+            <img src="./images/busimg.webp" class="card-img-top h-100 w-100" alt="...">
           </div>
-          <h6 class="card-title">Gaming in the Age of AI</h6>
+          <div class="card-body">
+            <div>
+              <small>Virtual Reality</small> <span class="card-time">| 9mo ago</span>
+            </div>
+            <h6 class="card-title">Gaming in the Age of AI</h6>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-12 col-sm-6 col-lg-3">
-      <div class="card h-100 position-relative">
-        <i class="bi bi-bookmark bookmark-icon"></i>
-           <div class="image-wareper" style="height: 180px;">
-         <img src="./images/card1.webp" class="card-img-top h-100 w-100" alt="...">
-       </div>
-        <div class="card-body">
-          <div>
-            <small>Media</small> <span class="card-time">| 1yr ago</span>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 position-relative">
+          <i class="bi bi-bookmark bookmark-icon"></i>
+          <div class="image-wareper" style="height: 180px;">
+            <img src="./images/card1.webp" class="card-img-top h-100 w-100" alt="...">
           </div>
-          <h6 class="card-title">Top Independent Contractors to Invest In</h6>
+          <div class="card-body">
+            <div>
+              <small>Media</small> <span class="card-time">| 1yr ago</span>
+            </div>
+            <h6 class="card-title">Top Independent Contractors to Invest In</h6>
+          </div>
         </div>
       </div>
+
     </div>
 
+    <div class="row g-4 mt-5">
+
+      <!-- CARD START -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 position-relative">
+          <i class="bi bi-bookmark bookmark-icon"></i>
+          <div class="image-wareper" style="height: 180px;">
+            <img src="./images/card2.webp" class="card-img-top h-100 w-100" alt="...">
+          </div>
+          <div class="card-body">
+            <div>
+              <small>Startups</small> <span class="card-time">| 3mo ago</span>
+            </div>
+            <h6 class="card-title">Tech Tools for Your Time Management</h6>
+          </div>
+        </div>
+      </div>
+      <!-- CARD END -->
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 position-relative">
+          <i class="bi bi-bookmark bookmark-icon"></i>
+          <div class="image-wareper" style="height: 180px;">
+            <img src="./images/card3.webp" class="card-img-top h-100 w-100" alt="...">
+          </div>
+          <div class="card-body">
+            <div>
+              <small>AI Powered</small> <span class="card-time">| 6mo ago</span>
+            </div>
+            <h6 class="card-title">The Rise of Gourmet Street Food</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 position-relative">
+          <i class="bi bi-bookmark bookmark-icon"></i>
+          <div class="image-wareper" style="height: 180px;">
+            <img src="./images/card4.webp" class="card-img-top h-100 w-100" alt="...">
+          </div>
+          <div class="card-body">
+            <div>
+              <small>Virtual Reality</small> <span class="card-time">| 9mo ago</span>
+            </div>
+            <h6 class="card-title">Gaming in the Age of AI</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 position-relative">
+          <i class="bi bi-bookmark bookmark-icon"></i>
+          <div class="image-wareper" style="height: 180px;">
+            <img src="./images/fish.webp" class="card-img-top h-100 w-100" alt="...">
+          </div>
+          <div class="card-body">
+            <div>
+              <small>Media</small> <span class="card-time">| 1yr ago</span>
+            </div>
+            <h6 class="card-title">Top Independent Contractors to Invest In</h6>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row g-4 mt-5">
+
+      <!-- CARD START -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 position-relative">
+          <i class="bi bi-bookmark bookmark-icon"></i>
+          <div class="image-wareper" style="height: 180px;">
+            <img src="./images/ladis.webp" class="card-img-top h-100 w-100" alt="...">
+          </div>
+          <div class="card-body">
+            <div>
+              <small>Startups</small> <span class="card-time">| 3mo ago</span>
+            </div>
+            <h6 class="card-title">Tech Tools for Your Time Management</h6>
+          </div>
+        </div>
+      </div>
+      <!-- CARD END -->
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 position-relative">
+          <i class="bi bi-bookmark bookmark-icon"></i>
+          <div class="image-wareper" style="height: 180px;">
+            <img src="./images/litton.6.webp" class="card-img-top h-100 w-100" alt="...">
+          </div>
+          <div class="card-body">
+            <div>
+              <small>AI Powered</small> <span class="card-time">| 6mo ago</span>
+            </div>
+            <h6 class="card-title">The Rise of Gourmet Street Food</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 position-relative">
+          <i class="bi bi-bookmark bookmark-icon"></i>
+          <div class="image-wareper" style="height: 180px;">
+            <img src="./images/post-full.webp" class="card-img-top h-100 w-100" alt="...">
+          </div>
+          <div class="card-body">
+            <div>
+              <small>Virtual Reality</small> <span class="card-time">| 9mo ago</span>
+            </div>
+            <h6 class="card-title">Gaming in the Age of AI</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 position-relative">
+          <i class="bi bi-bookmark bookmark-icon"></i>
+          <div class="image-wareper" style="height: 180px;">
+            <img src="https://picsum.photos/400/250?random=4" class="card-img-top h-100 w-100" alt="...">
+          </div>
+          <div class="card-body">
+            <div>
+              <small>Media</small> <span class="card-time">| 1yr ago</span>
+            </div>
+            <h6 class="card-title">Top Independent Contractors to Invest In</h6>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div class="row g-4 mt">
+
+      <!-- CARD START -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 position-relative">
+          <i class="bi bi-bookmark bookmark-icon"></i>
+          <div class="image-wareper" style="height: 180px;">
+            <img src="https://picsum.photos/400/250?random=1" class="card-img-top h-100 w-100" alt="...">
+          </div>
+          <div class="card-body">
+            <div>
+              <small>Startups</small> <span class="card-time">| 3mo ago</span>
+            </div>
+            <h6 class="card-title">Tech Tools for Your Time Management</h6>
+          </div>
+        </div>
+      </div>
+      <!-- CARD END -->
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 position-relative">
+          <i class="bi bi-bookmark bookmark-icon"></i>
+          <div class="image-wareper" style="height: 180px;">
+            <img src="./images/slaider3.webp" class="card-img-top h-100 w-100" alt="...">
+          </div>
+          <div class="card-body">
+            <div>
+              <small>AI Powered</small> <span class="card-time">| 6mo ago</span>
+            </div>
+            <h6 class="card-title">The Rise of Gourmet Street Food</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 position-relative">
+          <i class="bi bi-bookmark bookmark-icon"></i>
+          <div class="image-wareper" style="height: 180px;">
+            <img src="https://picsum.photos/400/250?random=5" class="card-img-top h-100 w-100" alt="...">
+          </div>
+          <div class="card-body">
+            <div>
+              <small>Virtual Reality</small> <span class="card-time">| 9mo ago</span>
+            </div>
+            <h6 class="card-title">Gaming in the Age of AI</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card h-100 position-relative">
+          <i class="bi bi-bookmark bookmark-icon"></i>
+          <div class="image-wareper" style="height: 180px;">
+            <img src="https://picsum.photos/400/250?random=7" class="card-img-top h-100 w-100" alt="...">
+          </div>
+          <div class="card-body">
+            <div>
+              <small>Media</small> <span class="card-time">| 1yr ago</span>
+            </div>
+            <h6 class="card-title">Top Independent Contractors to Invest In</h6>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="#" class="btn btn-outline-danger px-4">See all latest news</a>
+    </div>
   </div>
 
-  <div class="row g-4 mt-5">
+  <!-- Allcard Section end -->
 
-    <!-- CARD START -->
-    <div class="col-12 col-sm-6 col-lg-3">
-      <div class="card h-100 position-relative">
-        <i class="bi bi-bookmark bookmark-icon"></i>
-           <div class="image-wareper" style="height: 180px;">
-         <img src="./images/card2.webp" class="card-img-top h-100 w-100" alt="...">
-       </div>
-        <div class="card-body">
-          <div>
-            <small>Startups</small> <span class="card-time">| 3mo ago</span>
-          </div>
-          <h6 class="card-title">Tech Tools for Your Time Management</h6>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Latest Topics</h4>
+        <ul>
+          <li>Startups and technology</li>
+          <li>Data and security</li>
+          <li>Fintech and ecommerce</li>
+          <li>Investors and funding</li>
+          <li>Corporates and innovation</li>
+          <li>Government and policy</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>The News</h4>
+        <ul>
+          <li>Media</li>
+          <li>Events</li>
+          <li>Partner with us</li>
+          <li>Jobs</li>
+          <li>Masthead</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>About</h4>
+        <ul>
+          <li>About</li>
+          <li>Career</li>
+          <li>Log in</li>
+          <li>Create an account</li>
+          <li>Sitemap</li>
+        </ul>
+      </div>
+      <div class="footer-subscribe">
+        <h2>Keep up to date with the latest updates & news</h2>
+        <form>
+          <input type="email" placeholder="Your email">
+          <button type="submit">Sign up</button>
+        </form>
+        <p>
+          By pressing the Subscribe button, you confirm that you have read and are agreeing to our
+          <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>
+        </p>
+        <div class="social-icons">
+          <span>🔵</span>
+          <span>❌</span>
+          <span>📸</span>
+          <span>▶️</span>
         </div>
       </div>
     </div>
-    <!-- CARD END -->
-
-    <div class="col-12 col-sm-6 col-lg-3">
-      <div class="card h-100 position-relative">
-        <i class="bi bi-bookmark bookmark-icon"></i>
-           <div class="image-wareper" style="height: 180px;">
-         <img src="./images/card3.webp" class="card-img-top h-100 w-100" alt="...">
-       </div>
-        <div class="card-body">
-          <div>
-            <small>AI Powered</small> <span class="card-time">| 6mo ago</span>
-          </div>
-          <h6 class="card-title">The Rise of Gourmet Street Food</h6>
-        </div>
+    <div class="footer-bottom">
+      <div class="logo">The News</div>
+      <div class="rights">
+        News5 © 2025, All rights reserved.
+        <a href="#">Privacy notice</a>
+        <a href="#">Terms of condition</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="language-select">
+        🌐 English ▼
       </div>
     </div>
-
-    <div class="col-12 col-sm-6 col-lg-3">
-      <div class="card h-100 position-relative">
-        <i class="bi bi-bookmark bookmark-icon"></i>
-            <div class="image-wareper" style="height: 180px;">
-         <img src="./images/card4.webp" class="card-img-top h-100 w-100" alt="...">
-       </div>
-        <div class="card-body">
-          <div>
-            <small>Virtual Reality</small> <span class="card-time">| 9mo ago</span>
-          </div>
-          <h6 class="card-title">Gaming in the Age of AI</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-sm-6 col-lg-3">
-      <div class="card h-100 position-relative">
-        <i class="bi bi-bookmark bookmark-icon"></i>
-            <div class="image-wareper" style="height: 180px;">
-         <img src="./images/fish.webp" class="card-img-top h-100 w-100" alt="...">
-       </div>
-        <div class="card-body">
-          <div>
-            <small>Media</small> <span class="card-time">| 1yr ago</span>
-          </div>
-          <h6 class="card-title">Top Independent Contractors to Invest In</h6>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="row g-4 mt-5">
-
-    <!-- CARD START -->
-    <div class="col-12 col-sm-6 col-lg-3">
-      <div class="card h-100 position-relative">
-        <i class="bi bi-bookmark bookmark-icon"></i>
-            <div class="image-wareper" style="height: 180px;">
-         <img src="./images/ladis.webp" class="card-img-top h-100 w-100" alt="...">
-       </div>
-        <div class="card-body">
-          <div>
-            <small>Startups</small> <span class="card-time">| 3mo ago</span>
-          </div>
-          <h6 class="card-title">Tech Tools for Your Time Management</h6>
-        </div>
-      </div>
-    </div>
-    <!-- CARD END -->
-
-    <div class="col-12 col-sm-6 col-lg-3">
-      <div class="card h-100 position-relative">
-        <i class="bi bi-bookmark bookmark-icon"></i>
-            <div class="image-wareper" style="height: 180px;">
-         <img src="./images/litton.6.webp" class="card-img-top h-100 w-100" alt="...">
-       </div>
-        <div class="card-body">
-          <div>
-            <small>AI Powered</small> <span class="card-time">| 6mo ago</span>
-          </div>
-          <h6 class="card-title">The Rise of Gourmet Street Food</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-sm-6 col-lg-3">
-      <div class="card h-100 position-relative">
-        <i class="bi bi-bookmark bookmark-icon"></i>
-            <div class="image-wareper" style="height: 180px;">
-         <img src="./images/post-full.webp" class="card-img-top h-100 w-100" alt="...">
-       </div>
-        <div class="card-body">
-          <div>
-            <small>Virtual Reality</small> <span class="card-time">| 9mo ago</span>
-          </div>
-          <h6 class="card-title">Gaming in the Age of AI</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-sm-6 col-lg-3">
-      <div class="card h-100 position-relative">
-        <i class="bi bi-bookmark bookmark-icon"></i>
-            <div class="image-wareper" style="height: 180px;">
-         <img src="https://picsum.photos/400/250?random=4" class="card-img-top h-100 w-100" alt="...">
-       </div>
-        <div class="card-body">
-          <div>
-            <small>Media</small> <span class="card-time">| 1yr ago</span>
-          </div>
-          <h6 class="card-title">Top Independent Contractors to Invest In</h6>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-
-
-  <div class="row g-4 mt">
-
-    <!-- CARD START -->
-    <div class="col-12 col-sm-6 col-lg-3">
-      <div class="card h-100 position-relative">
-        <i class="bi bi-bookmark bookmark-icon"></i>
-        <div class="image-wareper" style="height: 180px;">
-         <img src="https://picsum.photos/400/250?random=1" class="card-img-top h-100 w-100" alt="...">
-       </div>
-        <div class="card-body">
-          <div>
-            <small>Startups</small> <span class="card-time">| 3mo ago</span>
-          </div>
-          <h6 class="card-title">Tech Tools for Your Time Management</h6>
-        </div>
-      </div>
-    </div>
-    <!-- CARD END -->
-
-    <div class="col-12 col-sm-6 col-lg-3">
-      <div class="card h-100 position-relative">
-        <i class="bi bi-bookmark bookmark-icon"></i>
-        <div class="image-wareper" style="height: 180px;">
-         <img src="./images/slaider3.webp" class="card-img-top h-100 w-100" alt="...">
-       </div>
-        <div class="card-body">
-          <div>
-            <small>AI Powered</small> <span class="card-time">| 6mo ago</span>
-          </div>
-          <h6 class="card-title">The Rise of Gourmet Street Food</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-sm-6 col-lg-3">
-      <div class="card h-100 position-relative">
-        <i class="bi bi-bookmark bookmark-icon"></i>
-                 <div class="image-wareper" style="height: 180px;">
-         <img src="https://picsum.photos/400/250?random=5" class="card-img-top h-100 w-100" alt="...">
-       </div>
-        <div class="card-body">
-          <div>
-            <small>Virtual Reality</small> <span class="card-time">| 9mo ago</span>
-          </div>
-          <h6 class="card-title">Gaming in the Age of AI</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-sm-6 col-lg-3">
-      <div class="card h-100 position-relative">
-        <i class="bi bi-bookmark bookmark-icon"></i>
-                <div class="image-wareper" style="height: 180px;">
-         <img src="https://picsum.photos/400/250?random=7" class="card-img-top h-100 w-100" alt="...">
-       </div>
-        <div class="card-body">
-          <div>
-            <small>Media</small> <span class="card-time">| 1yr ago</span>
-          </div>
-          <h6 class="card-title">Top Independent Contractors to Invest In</h6>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="text-center mt-5">
-    <a href="#" class="btn btn-outline-danger px-4">See all latest news</a>
-  </div>
-</div>
-
- <!-- Allcard Section end -->
-
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-section">
-      <h4>Latest Topics</h4>
-      <ul>
-        <li>Startups and technology</li>
-        <li>Data and security</li>
-        <li>Fintech and ecommerce</li>
-        <li>Investors and funding</li>
-        <li>Corporates and innovation</li>
-        <li>Government and policy</li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>The News</h4>
-      <ul>
-        <li>Media</li>
-        <li>Events</li>
-        <li>Partner with us</li>
-        <li>Jobs</li>
-        <li>Masthead</li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>About</h4>
-      <ul>
-        <li>About</li>
-        <li>Career</li>
-        <li>Log in</li>
-        <li>Create an account</li>
-        <li>Sitemap</li>
-      </ul>
-    </div>
-    <div class="footer-subscribe">
-      <h2>Keep up to date with the latest updates & news</h2>
-      <form>
-        <input type="email" placeholder="Your email">
-        <button type="submit">Sign up</button>
-      </form>
-      <p>
-        By pressing the Subscribe button, you confirm that you have read and are agreeing to our 
-        <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>
-      </p>
-      <div class="social-icons">
-        <span>🔵</span>
-        <span>❌</span>
-        <span>📸</span>
-        <span>▶️</span>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="logo">The News</div>
-    <div class="rights">
-      News5 © 2025, All rights reserved.
-      <a href="#">Privacy notice</a>
-      <a href="#">Terms of condition</a>
-      <a href="#">FAQ</a>
-    </div>
-    <div class="language-select">
-      🌐 English ▼
-    </div>
-  </div>
-</footer>
+  </footer>
 
 
   <!-- Swiper JS -->
@@ -903,75 +1092,71 @@ Latest news</div>
 
 
   <script>
-    let hasAnimated = [];
-
-    const swiper = new Swiper(".mySwiper", {
-      speed: 800,
+    const swiper = new Swiper('.main-swiper', {
+      loop: true,
+      speed: 600,
       autoplay: {
-        delay: 5000,
+        delay: 4000,
         disableOnInteraction: false,
       },
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: '.main-next',
+        prevEl: '.main-prev',
       },
-      on: {
-        slideChangeTransitionStart: function () {
-          document.querySelectorAll('.slide-content').forEach(el => {
-            el.classList.remove('show');
-          });
+    });
+    // Show animation on first load
+    const slider = tns({
+      container: ".tiny-video-slider",
+      items: 3, // Show 3 full cards
+      slideBy: 1, // Slide 1 full card
+      autoplay: true,
+      autoplayTimeout: 4000,
+      autoplayButtonOutput: false,
+      controls: false,
+      nav: false,
+      gutter: 20, // Space between cards
+      mouseDrag: true,
+      loop: true,
+      responsive: {
+        0: {
+          items: 1
         },
-        slideChangeTransitionEnd: function () {
-          const activeIndex = this.activeIndex;
-          const content = this.slides[activeIndex].querySelector('.slide-content');
-          content.classList.add('show');
-          hasAnimated[activeIndex] = true;
+        576: {
+          items: 2
+        },
+        992: {
+          items: 3
         }
       }
     });
 
-    // Show animation on first load
-const slider = tns({
-    container: ".tiny-video-slider",
-    items: 3, // Show 3 full cards
-    slideBy: 1, // Slide 1 full card
-    autoplay: true,
-    autoplayTimeout: 4000,
-    autoplayButtonOutput: false,
-    controls: false,
-    nav: false,
-    gutter: 20, // Space between cards
-    mouseDrag: true,
-    loop: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      576: {
-        items: 2
-      },
-      992: {
-        items: 3
+    const autoplay = slider.getInfo().autoplay;
+
+    document.querySelector(".custom-prev").addEventListener("click", () => {
+      autoplay.pause();
+      slider.goTo("prev");
+      autoplay.play();
+    });
+
+    document.querySelector(".custom-next").addEventListener("click", () => {
+      autoplay.pause();
+      slider.goTo("next");
+      autoplay.play();
+    });
+
+
+    window.addEventListener('scroll', function () {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 10) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
       }
-    }
-  });
-
-  const autoplay = slider.getInfo().autoplay;
-
-  document.querySelector(".custom-prev").addEventListener("click", () => {
-    autoplay.pause();
-    slider.goTo("prev");
-    autoplay.play();
-  });
-
-  document.querySelector(".custom-next").addEventListener("click", () => {
-    autoplay.pause();
-    slider.goTo("next");
-    autoplay.play();
-  });
+    });
   </script>
 
-    <script src="./js/Navber.js"></script>
-    <script src="./js/slaider.js"></script>
-  </body>
+  <script src="./js/Navber.js"></script>
+  <script src="./js/slaider.js"></script>
+</body>
+
 </html>

@@ -2,9 +2,30 @@
   .vedio-par{
     height: 93vh !important;
   }
+    .main-left-content {
+      margin-left: 50px;
+    }
+    .main-arrows{
+      left: 10%;
+    }
+    .main-right-list {
+
+      margin-right: 100px;
+    }
 
 }
 @media (max-width: 1024px) {
+      .main-right-list {
+
+      margin-right: 100px;
+    }
+
+   .main-arrows{
+      left: 10%;
+    }
+    .main-left-content {
+      margin-left: 50px;
+    }
  
   .top-header{
     width:404px !important;
@@ -68,6 +89,39 @@
 
 
 @media (max-width: 768px) {
+      .main-left-content {
+      margin-left: 50px;
+    }
+        .main-right-list {
+
+      margin-right: 50px;
+    }
+
+    .main-arrows {
+
+    top: 157px;
+    left: 13%;
+  
+}
+      .main-overlay {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+      }
+
+      .main-left-content, .main-right-list {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+      }
+
+      .main-title {
+        font-size: 22px;
+      }
+
+      .main-arrows {
+        bottom: 10px;
+      }
   .top-header{
     width:404px !important;
   }
